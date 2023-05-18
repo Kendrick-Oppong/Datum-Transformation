@@ -1,0 +1,114 @@
+.main {
+  position: relative;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  margin-top: 15px;
+  min-height: 100vh;
+}
+
+
+
+
+.fieldset {
+  margin-inline: auto;
+  margin-bottom: 30px;
+  border-width: 1px;
+  border-color: rgb(7, 7, 7);
+}
+
+.legend {
+  padding: 10px;
+  background: #d8d8c0;
+  border-radius: 5px;
+}
+
+.fieldset div {
+  margin-top: 40px;
+  text-align: left;
+  margin-left: 5%;
+}
+
+.label {
+  width: 15%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.input {
+  padding: 12px;
+  width: 75%;
+  outline: 1px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid rgb(72, 72, 73);
+  margin-left: 5%;
+}
+
+.input::placeholder {
+  font-size: 16px;
+  color: hsl(0, 0%, 0%);
+}
+
+.btn {
+  margin-block: 40px;
+  padding: 10px;
+  font-size: 18px;
+  width: 8.5em;
+  height: 2.3em;
+  margin: 2em;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 0.625em;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.btn:hover {
+  color: black;
+}
+
+.btn:after {
+  content: "";
+  background: rgba(255, 255, 255, 0.603);
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.5s;
+}
+
+.btn:hover:after {
+  transform: skewX(-45deg) scale(1, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+/* results */
+.result-button {
+  border: 1px solid black;
+  padding:3px 6px;
+  margin-top: 17px;
+  border-radius: 5px;
+  font-weight: normal;
+}
+
+.result-button:hover {
+  background-color:rgb(192, 192, 157)
+}
+
+@media screen  and (min-width: 640px) {
+  .title {
+  border-bottom-left-radius: 10px;
+  border-bottom: 11px double rgb(167, 167, 146);
+  border-bottom-right-radius: 10px;
+  padding-bottom: 15px;
+}
+}
